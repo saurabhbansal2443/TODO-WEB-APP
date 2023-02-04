@@ -3,7 +3,7 @@ let ulTag=document.querySelector("ul");
 inputTag.addEventListener("keydown",function(e){
     console.log(e);
     let key =e.key;
-    if(key=='Enter' ){
+    if(key=='Enter' && inputTag.value.length!=0 ){
         let value=inputTag.value;
         inputTag.value="";
         let liTag=document.createElement('li');
